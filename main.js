@@ -16,6 +16,26 @@ if (buyBtn) {
     });
 }
 
+// Setup continuous gallery scrolling
+function setupGallery() {
+    const galleryRows = document.querySelectorAll('.gallery-row');
+    
+    galleryRows.forEach(row => {
+        const items = row.querySelector('.gallery-items');
+        if (!items) return;
+        
+        // Clone all images
+        const images = items.querySelectorAll('img');
+        images.forEach(img => {
+            const clone = img.cloneNode(true);
+            items.appendChild(clone);
+        });
+    });
+}
+
+// Initialize gallery when DOM is loaded
+document.addEventListener('DOMContentLoaded', setupGallery);
+
 // Animate all gallery items on hover
 const galleryItems = document.querySelectorAll('.gallery-item img');
 galleryItems.forEach(img => {
