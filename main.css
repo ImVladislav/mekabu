@@ -185,7 +185,7 @@ main {
     line-height: 48px;
     height: 48px;
     padding: 0;
-    animation: marquee 30s linear infinite;
+    animation: marquee 60s linear infinite;
     text-shadow: 3px 3px 8px #000, 0 0 12px #000;
     box-sizing: border-box;
 }
@@ -451,11 +451,11 @@ main {
 }
 
 .gallery-row-1 .gallery-items {
-    animation: gallery-scroll-ltr 60s linear infinite;
+    animation: gallery-scroll-ltr 120s linear infinite;
 }
 
 .gallery-row-2 .gallery-items {
-    animation: gallery-scroll-rtl 60s linear infinite;
+    animation: gallery-scroll-rtl 120s linear infinite;
 }
 
 @keyframes gallery-scroll-ltr {
@@ -855,7 +855,7 @@ main {
         margin: 8px auto 0 auto;
     }
     .meme-text {
-        font-size: 1rem;
+        font-size: 0.7rem;
         margin-bottom: 8px;
     }
     main {
