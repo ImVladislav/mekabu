@@ -1,0 +1,44 @@
+// This file is intentionally left blank.
+
+// Animate BUY button and show meme alert
+const buyBtn = document.getElementById('buyBtn');
+if (buyBtn) {
+    buyBtn.addEventListener('click', () => {
+        buyBtn.classList.add('clicked');
+        setTimeout(() => buyBtn.classList.remove('clicked'), 300);
+        alert('🐸 $MEKABU bought! Welcome to the frog army!');
+    });
+    buyBtn.addEventListener('mouseover', () => {
+        buyBtn.style.animation = 'bounce 0.7s';
+    });
+    buyBtn.addEventListener('animationend', () => {
+        buyBtn.style.animation = '';
+    });
+}
+
+// Animate all gallery items on hover
+const galleryItems = document.querySelectorAll('.gallery-item img');
+galleryItems.forEach(img => {
+    img.addEventListener('mouseover', () => {
+        img.style.transform = `scale(1.08) rotate(${Math.random() * 8 - 4}deg)`;
+    });
+    img.addEventListener('mouseout', () => {
+        img.style.transform = '';
+    });
+});
+
+// Ensure marquees are always full width and infinite
+function restartMarquee(marquee) {
+    marquee.style.animation = 'none';
+    // Force reflow
+    void marquee.offsetWidth;
+    marquee.style.animation = '';
+}
+['marquee1','marquee2','marquee3'].forEach(id => {
+    const marquee = document.getElementById(id);
+    if (marquee) {
+        marquee.addEventListener('animationiteration', () => restartMarquee(marquee));
+    }
+});
+
+// Якщо потрібно додати ще інтерактивності, можна тут
