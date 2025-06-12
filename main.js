@@ -61,4 +61,19 @@ function restartMarquee(marquee) {
     }
 });
 
+// Copy contract to clipboard and show modal
+const contractBlock = document.getElementById('contractBlock');
+const modalCopy = document.getElementById('modalCopy');
+if (contractBlock && modalCopy) {
+    contractBlock.addEventListener('click', () => {
+        const contract = contractBlock.textContent.trim();
+        navigator.clipboard.writeText(contract).then(() => {
+            modalCopy.style.display = 'block';
+            setTimeout(() => {
+                modalCopy.style.display = 'none';
+            }, 2000);
+        });
+    });
+}
+
 // Якщо потрібно додати ще інтерактивності, можна тут

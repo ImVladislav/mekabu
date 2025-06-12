@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background: #fff;
     margin: 0;
@@ -18,13 +22,54 @@ body {
     margin: 0 0 16px 0;
     letter-spacing: 2px;
     text-shadow:
-        -2px -2px 0 #fff,
-        2px -2px 0 #fff,
-        -2px 2px 0 #fff,
-        2px 2px 0 #fff,
-        6px 6px 16px #000,
-        0 0 12px #000;
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff,
+        3px 3px 8px #000,
+        0 0 8px #000;
 }
+.contract-block {
+    font-family: monospace;
+    cursor: pointer;
+    user-select: all;
+    border: 2px solid #fff;
+    text-align: center;
+    margin: 12px auto 0 auto;
+    padding: 10px 22px;
+    display: inline-block;
+}
+.contract-block:hover {
+    color: #ffe600;
+    transform: scale(1.04);
+    transition: transform 0.15s;
+}
+
+.modal-copy {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 18%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    color: #111;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 18px 38px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px #000a, 0 2px 8px #fff8;
+    border: 3px solid #222;
+    z-index: 1000;
+    text-align: center;
+    opacity: 0.98;
+    letter-spacing: 1px;
+    animation: fadeIn 0.2s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -20px); }
+    to { opacity: 0.98; transform: translate(-50%, 0); }
+}
+
 .frog-img {
     width: 200px;
     height: auto;
@@ -412,6 +457,7 @@ main {
         width: 130px;
         height: 130px;
     }
+    .frog-img { width: 170px; }
 }
 
 @media (max-width: 768px) {
@@ -419,9 +465,7 @@ main {
         font-size: 3rem;
     }
     
-    .frog-img {
-        width: 160px;
-    }
+    .frog-img { width: 130px; }
     
     .meme-text {
         font-size: 1.1rem;
@@ -461,9 +505,7 @@ main {
         font-size: 2.5rem;
     }
     
-    .frog-img {
-        width: 140px;
-    }
+    .frog-img { width: 90px; }
     
     .meme-text {
         font-size: 1rem;
@@ -511,9 +553,7 @@ main {
         font-size: 2rem;
     }
     
-    .frog-img {
-        width: 120px;
-    }
+    .frog-img { width: 70px; }
     
     .gallery-row img {
         width: 80px;
@@ -540,10 +580,7 @@ main {
         margin-bottom: 8px;
     }
     
-    .frog-img {
-        width: 100px;
-        margin-bottom: 8px;
-    }
+    .frog-img { width: 60px; }
     
     .meme-text {
         margin-bottom: 8px;
@@ -561,5 +598,22 @@ main {
     .gallery-row img {
         width: 80px;
         height: 80px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .animated-gallery {
+        max-width: 1600px;
+    }
+    .about-section {
+        max-width: 1000px;
+        padding: 48px 40px;
+    }
+    .info-section {
+        max-width: 1400px;
+        gap: 80px;
+    }
+    .gallery {
+        max-width: 1600px;
     }
 }
