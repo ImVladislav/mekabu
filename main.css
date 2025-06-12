@@ -12,22 +12,27 @@ body {
     text-align: center;
     margin-top: 24px;
 }
-.main-title {
+.main-title, .gallery-title {
     font-size: 5rem;
     font-weight: bold;
     margin: 0 0 16px 0;
     letter-spacing: 2px;
-    text-shadow: 6px 6px 16px #000, 0 0 12px #000;
+    text-shadow:
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff,
+        6px 6px 16px #000,
+        0 0 12px #000;
 }
 .frog-img {
     width: 200px;
     height: auto;
     margin: 0 auto 18px auto;
     display: block;
-    border-radius: 20px;
-    border: 4px solid #222;
-    box-shadow: 0 8px 32px 0 #000a, 0 2px 8px #fff8;
-    background: #eee;
+    /* border-radius: 20px; */
+    /* box-shadow: 0 8px 32px 0 #000a, 0 2px 8px #fff8; */
+    /* background: #eee; */
     transition: box-shadow 0.3s, transform 0.2s;
 }
 .meme-text {
@@ -391,4 +396,170 @@ main {
 .animated-gallery::after {
     right: 0;
     background: linear-gradient(to left, #fff 70%, transparent 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-title {
+        font-size: 4rem;
+    }
+    
+    .animated-gallery {
+        max-width: 95vw;
+    }
+    
+    .gallery-row img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .frog-img {
+        width: 160px;
+    }
+    
+    .meme-text {
+        font-size: 1.1rem;
+    }
+    
+    .info-section {
+        padding: 0 20px;
+    }
+    
+    .chart-block, .info-block {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .gallery-row img {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .gallery-row {
+        height: 140px;
+    }
+    
+    .info-buttons {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .info-btn {
+        font-size: 1.1rem;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .frog-img {
+        width: 140px;
+    }
+    
+    .meme-text {
+        font-size: 1rem;
+    }
+    
+    .gallery-row img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .gallery-row {
+        height: 120px;
+    }
+    
+    .gallery-items {
+        gap: 16px;
+    }
+    
+    .about-section {
+        margin: 30px 15px;
+        padding: 20px 15px;
+    }
+    
+    .about-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-section p {
+        font-size: 1rem;
+    }
+    
+    .mekabu-marquee {
+        font-size: 1.2rem;
+    }
+    
+    .buy-btn {
+        font-size: 1.1rem;
+        padding: 12px 30px;
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 360px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .frog-img {
+        width: 120px;
+    }
+    
+    .gallery-row img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .gallery-row {
+        height: 100px;
+    }
+    
+    .gallery-items {
+        gap: 12px;
+    }
+}
+
+/* Fix for landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .main-header {
+        margin-top: 10px;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+        margin-bottom: 8px;
+    }
+    
+    .frog-img {
+        width: 100px;
+        margin-bottom: 8px;
+    }
+    
+    .meme-text {
+        margin-bottom: 8px;
+    }
+    
+    .gallery-section {
+        margin-top: 20px;
+    }
+    
+    .gallery-row {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+    .gallery-row img {
+        width: 80px;
+        height: 80px;
+    }
 }
