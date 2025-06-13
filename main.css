@@ -86,7 +86,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 18px;
-    /* text-shadow: 2px 2px 8px #000, 0 0 8px #fff8; */
+    text-shadow: 1px 1px 3px #000, 0 0 8px #fff8;
 }
 
 
@@ -161,7 +161,7 @@ main {
 .mekabu-marquee-wrapper {
     width: 100vw;
     min-width: 100vw;
-    height: 48px;
+    height: 58px;
     position: relative;
     overflow: hidden;
     background: #000;
@@ -180,7 +180,7 @@ main {
     display: inline-block;
     white-space: nowrap;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 2.4rem;
     font-weight: 200;
     letter-spacing: 2px;
     line-height: 48px;
@@ -297,7 +297,7 @@ main {
 }
 .info-text {
     font-size: 2.6rem;
-    font-weight: bold;
+    font-weight: 100;
     text-align: left;
     margin-bottom: 18px;
     text-shadow: 2px 2px 8px #000, 0 0 8px #fff8;
@@ -520,6 +520,7 @@ main {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
+ 
     .main-title {
         font-size: 6rem;
     }
@@ -544,7 +545,7 @@ main {
 @media screen and (min-width: 960px) {
     .meme-text {
     font-size: 2.3rem;
-    font-weight: bold;
+    font-weight: 100;
     margin-bottom: 18px;
 }
     
@@ -699,6 +700,12 @@ main {
 }
 
 @media (min-width: 1440px) {
+    .mekabu-marquee {
+
+    font-size: 2.4rem;
+ 
+}
+
     .gallery-row img {
         width: 300px;
         max-width: 320px;
