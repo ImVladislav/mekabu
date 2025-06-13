@@ -894,6 +894,7 @@ main {
         /* height: 44px; */
     }
         .chart-iframe {
+            margin-top: 20px;
     width: 700px;
     min-width: 300px;
     /* max-width: 500px; */
@@ -965,6 +966,7 @@ main {
         box-sizing: border-box;
     }
     .chart-block, .info-block {
+
         min-width: 100vw;
         max-width: 100vw;
         width: 100vw;
