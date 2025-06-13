@@ -76,4 +76,19 @@ if (contractBlock && modalCopy) {
     });
 }
 
+// Show loading GIF for 10 seconds on site load, then remove it
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingGif = document.getElementById('loadingGif');
+    
+    // Hide the loading gif after 10 seconds
+    setTimeout(function() {
+        loadingGif.classList.add('hide');
+        
+       
+        setTimeout(function() {
+            loadingGif.style.display = 'none';
+        }, 500);
+    }, 3000); // 10 seconds
+});
+
 // Якщо потрібно додати ще інтерактивності, можна тут

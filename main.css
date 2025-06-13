@@ -95,6 +95,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    z-index: 2;
     padding: 20px 35px;
 }
 
@@ -106,7 +107,7 @@ body {
     right: 0;
     bottom: 0;
    
-    z-index: 1;
+    z-index: 3;
 }
 
 .meme-text.contract-block > * {
@@ -185,7 +186,7 @@ main {
 .mekabu-marquee-wrapper {
     width: 100vw;
     min-width: 100vw;
-    height: 58px;
+    height: 52px;
     position: relative;
     overflow: hidden;
     background: #000;
@@ -206,7 +207,7 @@ main {
     color: #fff;
     font-size: 2.4rem;
     font-weight: 200;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     line-height: 48px;
     height: 48px;
     padding: 0;
@@ -216,7 +217,7 @@ main {
 }
 .mekabu-marquee::after {
     content: attr(data-text);
-    padding-left: 2vw;
+    padding-left: 6px;
 }
 @keyframes marquee {
     0% { transform: translateX(0); }
@@ -472,7 +473,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100px;
-    height: 70vh;
+    height: 100vh;
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0.4) 70%, transparent 100%);
     z-index: 1;
     pointer-events: none;
@@ -485,7 +486,7 @@ main {
     bottom: 0;
     right: 0;
     width: 100px;
-    height: 70vh;
+    height: 100vh;
     background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0.4) 70%, transparent 100%);
     z-index: 1;
     pointer-events: none;
@@ -568,6 +569,10 @@ main {
 .mekabu-img{
     width: 100%;
     max-width: 600px;
+
+    position: relative;
+    z-index: 2;
+    ;
 }
 
 
@@ -1049,4 +1054,29 @@ main {
     font-weight: 400;
     margin-top: 40px;
     border-top: 1px solid #eee;
+}
+
+.loading-gif {
+    position: absolute;
+    top: 32%;
+    left: 49.9%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.loading-gif.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.main-header {
+    position: relative;
+}
+
+.loading-gif img {
+    width: 975px;
+    /* height: 200px; */
+    object-fit: contain;
 }
