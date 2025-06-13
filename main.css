@@ -474,7 +474,7 @@ main {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100px;
+    width: 30px;
     height: 100vh;
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0.4) 70%, transparent 100%);
     z-index: 1;
@@ -487,12 +487,24 @@ main {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 100px;
+    width: 30px;
     height: 100vh;
     background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0.4) 70%, transparent 100%);
     z-index: 1;
     pointer-events: none;
     display: block;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery-row::before {
+    width: 100px;
+
+}
+
+.gallery-row::after {
+    width: 100px;
+}
+
 }
 
 .gallery-items {
@@ -569,7 +581,7 @@ main {
     height: 190px;
 }
 .mekabu-img{
-    width: 100%;
+    width: 70%;
     max-width: 600px;
 
     position: relative;
@@ -920,7 +932,7 @@ main {
         display: block;
     }
     .frog-img {
-        width: 310px;
+        width: 230px;
         margin: 0 auto 8px auto;
     }
     .mekabu-marquee-wrapper {
@@ -928,7 +940,7 @@ main {
     }
     .mekabu-marquee {
         font-size: 1rem;
-        line-height: 32px;
+        line-height: 28px;
         height: 32px;
     }
     .contract-block {
@@ -937,7 +949,7 @@ main {
         margin: 8px auto 0 auto;
     }
     .meme-text {
-        font-size: 0.7rem;
+        /* font-size: 0.7rem; */
         margin-bottom: 8px;
     }
     main {
@@ -970,7 +982,7 @@ main {
         margin: 0 auto;
     }
     .btn-img {
-        width: 50%;
+        width: 42%;
         height: 50%;
         /* min-width: 28px; */
         /* min-height: 28px; */
@@ -1041,7 +1053,8 @@ main {
 }
 
 .gallery-subtitle {
-    width: 49%;
+    width: 60%;
+    z-index: 2;
     height: auto;
     margin-bottom: 45px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
