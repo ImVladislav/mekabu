@@ -583,9 +583,10 @@ main {
     height: 190px;
 }
 .mekabu-img{
-    width: 70%;
-    max-width: 600px;
 
+    width: 60%;
+    max-width: 600px;
+    margin-bottom: 20px;
     position: relative;
     z-index: 2;
     ;
@@ -918,7 +919,7 @@ main {
         overflow-x: hidden;
     }
     header, .main-header {
-        margin-top: 10px;
+        margin-top: 30px;
         padding: 0 2vw;
         text-align: center;
     }
@@ -934,6 +935,7 @@ main {
         display: block;
     }
     .frog-img {
+        margin-top: 20px;
         width: 230px;
         margin: 0 auto 8px auto;
     }
