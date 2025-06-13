@@ -359,7 +359,7 @@ main {
 
 .gallery-section {
     margin-top: 60px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 .gallery {
     display: flex;
@@ -368,7 +368,7 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 20px;
 }
 .gallery-title {
     font-size: 2.4rem;
@@ -1052,7 +1052,7 @@ main {
     padding: 20px;
     font-size: 14px;
     font-weight: 400;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     border-top: 1px solid #eee;
 }
 
