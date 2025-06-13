@@ -24,8 +24,8 @@ function setupGallery() {
         const items = row.querySelector('.gallery-items');
         if (!items) return;
         
-        // Clone all images
-        const images = items.querySelectorAll('img');
+        // Clone all images for seamless scrolling
+        const images = Array.from(items.querySelectorAll('img'));
         images.forEach(img => {
             const clone = img.cloneNode(true);
             items.appendChild(clone);
