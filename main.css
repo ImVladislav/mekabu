@@ -83,11 +83,12 @@ body {
     transition: box-shadow 0.3s, transform 0.2s;
 }
 .meme-text {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 18px;
     /* text-shadow: 2px 2px 8px #000, 0 0 8px #fff8; */
 }
+
 
 .mekabu-ticker {
     width: 100vw;
@@ -497,20 +498,23 @@ main {
 }
 
 .gallery-row img {
-    width: 20vw;
-    max-width: 300px;
-    min-width: 180px;
-    height: 20vw;
-    max-height: 300px;
-    min-height: 180px;
+    width: 13vw;
+    /* max-width: 300px;
+    min-width: 180px; */
+    height: 13vw;
+    /* max-height: 300px;
+    min-height: 180px; */
     object-fit: contain;
     object-position: center center;
     background: #fff;
 }
 
-
+.gallery-row {
+    height: 180px;
+}
 .mekabu-img{
     width: 100%;
+    max-width: 600px;
 }
 
 
@@ -525,24 +529,32 @@ main {
     }
     
     .gallery-row img {
-        width: 130px;
-        height: 130px;
+        width: 160px;
+        height: 160px;
     }
-    .frog-img { width: 170px; }
+    /* .frog-img { width: 170px; } */
     .gallery-row {
-        height: 260px;
+        height: 160px;
     }
     .info-text {
         font-size: 2rem;
     }
 }
 
+@media screen and (min-width: 960px) {
+    .meme-text {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+    
+}
 @media (max-width: 768px) {
     .main-title {
         font-size: 3rem;
     }
     
-    .frog-img { width: 130px; }
+    .frog-img { width: 285px; }
     
     .meme-text {
         font-size: 1.1rem;
@@ -563,7 +575,7 @@ main {
     }
     
     .gallery-row {
-        height: 180px;
+        height: 110px;
     }
     
     .info-buttons {
@@ -686,7 +698,7 @@ main {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
     .gallery-row img {
         width: 300px;
         max-width: 320px;
@@ -713,6 +725,9 @@ main {
     .gallery {
         max-width: 1600px;
     }
+    .gallery-row {
+    height: 340px;
+}
 }
 
 .mekabu-logo, .sub-logo {
@@ -936,8 +951,8 @@ main {
         margin-bottom: 8px;
     }
     .gallery-row img {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         min-width: 40px;
         min-height: 40px;
         max-width: 80px;
