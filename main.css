@@ -86,7 +86,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 18px;
-    text-shadow: 1px 1px 3px #000, 0 0 8px #fff8;
+    /* text-shadow: 1px 1px 3px #000, 0 0 8px #fff8; */
 }
 
 .meme-text.contract-block {
@@ -294,7 +294,7 @@ main {
 .chart-block {
     flex: 1 1 350px;
     min-width: 320px;
-    max-width: 700px;
+    max-width: 820px;
     display: flex;
     justify-content: center;
 }
@@ -309,6 +309,8 @@ main {
     background: #fff;
 }
 .info-block {
+    position: relative;
+    z-index: 2;
     flex: 1 1 320px;
     min-width: 320px;
     max-width: 550px;
@@ -470,7 +472,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100px;
-    height: 75vh;
+    height: 70vh;
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0.4) 70%, transparent 100%);
     z-index: 1;
     pointer-events: none;
@@ -480,10 +482,10 @@ main {
 .gallery-row::after {
     content: '';
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: 0;
     width: 100px;
-    height: 100vh;
+    height: 70vh;
     background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0.4) 70%, transparent 100%);
     z-index: 1;
     pointer-events: none;
@@ -1032,7 +1034,7 @@ main {
 }
 
 .gallery-subtitle {
-    width: 55%;
+    width: 52%;
     height: auto;
     margin-bottom: 45px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
