@@ -1039,3 +1039,14 @@ main {
     margin-bottom: 45px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
+
+.footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+}
