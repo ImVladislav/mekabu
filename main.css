@@ -310,6 +310,8 @@ main {
     /* border: 3px solid #222; */
     /* box-shadow: 0 4px 24px #0008; */
     background: #fff;
+    position: relative;
+    z-index: 2;
 }
 .info-block {
     position: relative;
