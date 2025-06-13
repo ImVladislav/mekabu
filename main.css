@@ -89,6 +89,30 @@ body {
     text-shadow: 1px 1px 3px #000, 0 0 8px #fff8;
 }
 
+.meme-text.contract-block {
+    background-image: url('ca.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px;
+}
+
+.meme-text.contract-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+    z-index: 1;
+}
+
+.meme-text.contract-block > * {
+    position: relative;
+    z-index: 2;
+}
 
 .mekabu-ticker {
     width: 100vw;
