@@ -1032,16 +1032,16 @@ main {
         padding: 8px 0 0 0;
     }
     .gallery-row {
-        height: 80px;
+        height: 100px;
         margin-bottom: 8px;
     }
     .gallery-row img {
-        width: 80px;
-        height: 80px;
+       width: 100px;
+        height: 100px;
         min-width: 40px;
         min-height: 40px;
-        max-width: 80px;
-        max-height: 80px;
+        max-width: 100px;
+        max-height: 100px;
     }
     .gallery-items {
         gap: 8px;
@@ -1059,7 +1059,7 @@ main {
 }
 
 .gallery-subtitle {
-    width: 60%;
+    width: 65%;
     z-index: 2;
     height: auto;
     margin-bottom: 45px;
