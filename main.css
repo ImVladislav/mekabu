@@ -894,7 +894,7 @@ main {
         /* height: 44px; */
     }
         .chart-iframe {
-            margin-top: 20px;
+            margin-top: 30px;
     width: 700px;
     min-width: 300px;
     /* max-width: 500px; */
@@ -985,10 +985,10 @@ main {
         justify-content: center;
         width: 100%;
         gap: 8px;
-        margin: 0 auto;
+        margin: 30px auto;
     }
     .btn-img {
-        width: 42%;
+        width: 36%;
         height: 50%;
         /* min-width: 28px; */
         /* min-height: 28px; */
